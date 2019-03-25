@@ -16,15 +16,8 @@
       margin-bottom: 50px;
     }
 
-    @include tablets {
+    @include l-tablets {
       width: 100%;
-
-      &:nth-child(even) {
-        .services__col-img {
-          margin-left: -40px;
-          margin-right: 40px;
-        }
-      }
     }
 
     &-img {
@@ -34,7 +27,7 @@
       margin-right: 30px;
       position: relative;
 
-      @include tablets {
+      @include l-tablets {
         margin-right: 0;
       }
 
@@ -71,12 +64,12 @@
     margin: 60px 0 30px;
 
     .btn {
-      @include tablets {
+      @include l-tablets {
         display: none;
       }
     }
 
-    @include tablets {
+    @include l-tablets {
       margin: 80px 0 30px;
     }
   }
@@ -104,7 +97,7 @@
   &__mobile-btn {
     display: none;
 
-    @include tablets {
+    @include l-tablets {
       display: inline-block;
       margin-top: 30px;
     }

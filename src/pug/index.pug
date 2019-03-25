@@ -5,14 +5,13 @@ block page-title
 
 block page-content
   -
-    var dataColumns1 = {
+    var dataColumnsReverseInPhone = {
         desc: [
         "LYNN CALZADA,LYNN CALZADA,",
         "YOUR CERTIFIED IMAGE CONSULTANT.",
         "HELPING YOU LOOK AND FEEL YOUR ABSOLUTE BEST."
         ],
-        title: "There are only four ways we have contact with the world and we are continuously judged and classified by them:",      
-        titleIsH1: true,
+        title: "There are only four ways we have contact with the world and we are continuously judged and classified by them:", 
         list: [
             "How we look",
             "What we do",
@@ -27,7 +26,7 @@ block page-content
     }
 
   -
-    var dataColumns2 = {
+    var dataColumns1 = {
         title: "The ABC's for enhancing your image:",
         titleIsH2: true,
         list: [
@@ -43,7 +42,7 @@ block page-content
     }
 
   -
-    var dataColumns3 = {
+    var dataColumns2 = {
         desc: [
         "GREAT STYLE FOR EVERYONE"
         ],
@@ -57,7 +56,7 @@ block page-content
     }
 
   -
-    var dataColumns4 = {
+    var dataColumns3 = {
         title: "Write to Me",
         titleIsH2: true,
         form: true,
@@ -131,8 +130,8 @@ block page-content
     }
 
   main.main-content
+    +twoColumnReverseInPhone(dataColumnsReverseInPhone)
     +twoColumn(dataColumns1)
-    +twoColumn(dataColumns2)
     +services(dataServices)
+    +twoColumn(dataColumns2)
     +twoColumn(dataColumns3)
-    +twoColumn(dataColumns4)

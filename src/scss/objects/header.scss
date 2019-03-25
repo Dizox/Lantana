@@ -1,5 +1,8 @@
 .header {
   background-color: $c-primary;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   &__content {
     padding: 15px 0;
@@ -28,7 +31,7 @@
       }
 
       @include tablets {
-        font-size: 20px;
+        font-size: 16px;
       }
 
       &:not(:last-child) {
@@ -40,7 +43,7 @@
 
         @include tablets {
           margin-right: 0;
-          margin-bottom: 45px;
+          margin-bottom: 20px;
         }
       }
     }

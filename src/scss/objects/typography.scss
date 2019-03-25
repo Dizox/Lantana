@@ -52,6 +52,10 @@ p {
   font-family: $secondary-font;
   margin-bottom: 40px;
 
+  @include medium {
+    font-size: 32px;
+  }
+
   @include tablets {
     font-size: 24px;
     line-height: 32px;
@@ -79,6 +83,10 @@ p {
       height: 8px;
       border-radius: 100%;
       background-color: $c-primary;
+    }
+
+    @include tablets{
+      font-size: 20px;
     }
   }
 }

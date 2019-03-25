@@ -188,7 +188,7 @@ module.exports = () => {
       }),
 
       new HtmlWebpackPlugin({
-        template: 'pug/index.pug',
+        template: 'pug/contact.pug',
       }),
 
       extractStyles,

@@ -20,5 +20,20 @@
   &--small {
     font-size: 14px;
     padding: 15px 30px;
+
+    @include b-tablets {
+      padding: 15px 20px;
+      font-size: 12px;
+    }
+  }
+
+  @include phones {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  @include u-l-phones {
+    padding: 15px 20px;
+    font-size: 12px;
   }
 }

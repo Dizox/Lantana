@@ -1,0 +1,30 @@
+mixin twoColumnReverseInPhone(data)
+    if !data
+        - var data = {};
+    section.container
+        .two-column__wrap
+            .two-column__row(class=`${data.class ? data.class : ''}`)
+                .two-column__col
+                    .two-column__container
+                        if data.desc
+                            span.desc-text
+                                each item in data.desc
+                                    span= item
+                        h1.h3= data.title
+                    .two-column__container.two-column__container_phone
+                        .img-square-wrap.img-square-wrap_phone
+                            .img-square.img-square_phone(class=`img-square ${data.color}`)
+                                img(src=`${data.img}`)
+                        .two-column__container
+                            if data.list
+                                ul.style-ul
+                                    each item in data.list
+                                        li= item
+                            if data.autor
+                                p.quote= data.autor
+                            if data.buttonText
+                                a.btn(href=`${data.buttonLink}`)= data.buttonText
+                .two-column__col
+                    .img-square-wrap
+                        .img-square(class=`img-square ${data.color}`)
+                            img(src=`${data.img}`)

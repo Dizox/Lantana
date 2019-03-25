@@ -36,6 +36,7 @@
     "postinstall": "del-cli node_modules/**/*.info"
   },
   "dependencies": {
+    "all": "0.0.0",
     "jquery": "^3.3.1",
     "normalize.css": "^7.0.0"
   },
@@ -50,7 +51,7 @@
     "babel-runtime": "^6.22.0",
     "browser-sync": "^2.18.8",
     "browser-sync-webpack-plugin": "^1.1.4",
-    "cross-env": "^5.0.0",
+    "cross-env": "^5.2.0",
     "css-loader": "^0.28.0",
     "del-cli": "^1.0.0",
     "eslint": "^4.1.1",

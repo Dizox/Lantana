@@ -1,6 +1,10 @@
 import $ from 'jquery';
 
 $(document).ready(function () {
+    if (document.documentMode || /Edge/.test(navigator.userAgent)){ //find EDGE-users
+        $(".call").css("margin-left", "65px");
+    }
+
     $('.js-hamburger').click(function (e) {
         e.preventDefault();
         $(this).toggleClass('active');
@@ -33,4 +37,5 @@ $(document).ready(function () {
             }
         }
     });
+
 });

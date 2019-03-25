@@ -165,7 +165,7 @@ module.exports = (env) => {
       }),
 
       new HtmlWebpackPlugin({
-        template: 'pug/female.pug',
+        template: 'pug/contact.pug',
       }),
 
       extractStyles,

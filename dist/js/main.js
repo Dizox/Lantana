@@ -15263,6 +15263,10 @@ __webpack_require__(25)('observable');
 var _jquery = __webpack_require__(37);var _jquery2 = _interopRequireDefault(_jquery);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 (0, _jquery2.default)(document).ready(function () {
+    if (document.documentMode || /Edge/.test(navigator.userAgent)) {//find EDGE-users
+        (0, _jquery2.default)(".call").css("margin-left", "65px");
+    }
+
     (0, _jquery2.default)('.js-hamburger').click(function (e) {
         e.preventDefault();
         (0, _jquery2.default)(this).toggleClass('active');
@@ -15292,6 +15296,7 @@ var _jquery = __webpack_require__(37);var _jquery2 = _interopRequireDefault(_jqu
 
             1400: {
                 items: 5 } } });
+
 
 
 

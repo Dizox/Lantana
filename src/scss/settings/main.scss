@@ -24,11 +24,14 @@ $default-transition-time: 0.3s;
 $default-transition: all $default-transition-time ease;
 
 /* Media variables */
-$phones:   480px;
-$l-phones: 575px;
-$tablets:  768px;
-$medium:   991px;
-$large:    1199px;
-$x-large:  1439px;
+$u-l-phones: 360px;
+$phones:     480px;
+$b-phones:   575px;
+$l-tablets:  750px;
+$tablets:    768px;
+$b-tablets:  800px;
+$medium:     991px;
+$large:      1199px;
+$x-large:    1439px;
 
 $m-retina2x: screen and (min-resolution: 120dpi), screen and (min-resolution: 1.25dppx);

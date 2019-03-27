@@ -9,6 +9,7 @@ import postcssReporter from 'postcss-reporter';
 import StyleLintPlugin from 'stylelint-webpack-plugin';
 import BrowserSyncPlugin from 'browser-sync-webpack-plugin';
 
+const fs = require("fs");
 const extractStyles = new ExtractTextPlugin({ filename: 'css/[name].css' });
 
 const postcssProcessors = [
@@ -21,6 +22,8 @@ const postcssProcessors = [
 const scssProcessors = [
   postcssReporter({ clearReportedMessages: true }),
 ];
+
+const htmlPlugins = generateHtmlWebpackPlugins("./src/pug/pages");
 
 module.exports = (env) => {
   const stylesType = process.env.STYLES; // postcss or scss
@@ -164,10 +167,6 @@ module.exports = (env) => {
         name: "common",
       }),
 
-      new HtmlWebpackPlugin({
-        template: 'pug/contact.pug',
-      }),
-
       extractStyles,
 
       new StyleLintPlugin({
@@ -188,6 +187,22 @@ module.exports = (env) => {
         reloadDebounce: 500,
         reloadOnRestart: true,
       }),
-    ],
+    ].concat(htmlPlugins),
   };
 };
+
+// Generate HtmlWebpackPlugin for news Pages
+function generateHtmlWebpackPlugins(templateDir) {
+	const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+
+	return templateFiles.map(item => {
+		const parts = item.split(".");
+		const name = parts[0];
+		const extension = parts[1];
+
+		return new HtmlWebpackPlugin({
+			filename: `${name}.html`,
+			template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+		});
+	});
+}

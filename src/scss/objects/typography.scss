@@ -35,6 +35,7 @@ p {
 
   @include tablets {
     font-size: 12px;
+    order: 1;
   }
 
   span {
@@ -52,13 +53,34 @@ p {
   font-family: $secondary-font;
   margin-bottom: 40px;
 
-  @include medium {
-    font-size: 32px;
+  @include tablets {
+    order: 2;
   }
 
-  @include tablets {
-    font-size: 24px;
-    line-height: 32px;
+  @include medium {
+    font-size: 32px;
+    line-height: 41px;
+  }
+
+  //fix someone blocks
+  &_mediumFont {
+    font-size: 32px;
+    line-height: 48px;
+
+    @include tablets {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  &_bigFont {
+    font-size: 56px;
+
+    @include tablets {
+      font-size: 32px;
+      line-height: 41px;
+      margin-top: 15px;
+    }
   }
 }
 
@@ -68,7 +90,7 @@ p {
   margin: 0;
   font-size: 24px;
   font-family: $secondary-font;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   li {
     position: relative;

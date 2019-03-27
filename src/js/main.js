@@ -37,5 +37,15 @@ $(document).ready(function () {
             }
         }
     });
+});
 
+$(document).scroll(function () {
+    let s_top = $(this).scrollTop();
+    if(s_top > 1) {
+        $(".header__logo").addClass("header__logo_sticky");
+        console.log("success");
+    } else {
+        $(".header__logo").removeClass("header__logo_sticky");
+        console.log("fail");
+    }
 });

@@ -1,4 +1,4 @@
-extends layout/base
+extends ../layout/base
 
 block page-title
   title Lantana style
@@ -21,8 +21,11 @@ block page-content
         buttonText: "let's get started",
         buttonLink: "#",
         autor: "Dale Carnegie",
-        img: "../img/Lynn-homepage.png",
-        color: "img-square--yellow"
+        img: "../../img/Lynn-homepage.png",
+        color: "img-square--yellow",
+        titleFont: "true",
+        colFirst: "true",
+        startPage: "true"
     }
 
   -
@@ -36,9 +39,10 @@ block page-content
         ],
         buttonText: "read more",
         buttonLink: "#",
-        img: "../img/Corporate-1to1-people.png",
+        img: "../../img/Corporate-1to1-people.png",
         color: "img-square--right img-square--red",
-        class: "reverse"
+        class: "reverse",
+        indent: "true"
     }
 
   -
@@ -51,7 +55,7 @@ block page-content
         text: true,
         buttonText: "book a free consultation",
         buttonLink: "#",
-        img: "../img/Male-Personal-shopping.png",
+        img: "../../img/Male-Personal-shopping.png",
         color: "img-square--blue"
     }
 
@@ -59,10 +63,12 @@ block page-content
     var dataColumns3 = {
         title: "Write to Me",
         titleIsH2: true,
+        titleBigFont: true,
         form: true,
-        img: "../img/LYNN-0678.png",
+        img: "../../img/LYNN-0678.png",
         color: "img-square--right img-square--red",
-        class: "reverse form-col"
+        class: "reverse form-col",
+        indent: "true"
     }
 
   -

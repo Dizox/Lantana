@@ -8,7 +8,7 @@
   }
 
   p {
-    color: #fff;
+    color: $c-white;
     font-weight: 700;
   }
 
@@ -102,7 +102,7 @@
       text-decoration: none;
       font-size: 14px;
       text-transform: uppercase;
-      color: #fff;
+      color: $c-white;
       letter-spacing: 2.63px;
       margin-bottom: 35px;
       display: inline-block;
@@ -112,7 +112,7 @@
 
   &__social {
     font-size: 24px;
-    color: #fff;
+    color: $c-white;
 
     &:first-child {
       margin-right: 30px;
@@ -121,24 +121,30 @@
         margin-right: 20px;
       }
     }
+
+    &:hover {
+      transform: scale(1.2);
+      transition-duration: .3s;
+      display: inline-block;
+    }
   }
 
   &__mail {
-    color: #fff;
+    color: $c-white;
     text-decoration: none;
 
     &:hover {
-      color: darken(#fff, 15%);
+      color: darken($c-white, 15%);
     }
   }
 
   span {
-    color: #fff;
+    color: $c-white;
   }
 
   .copyright {
     opacity: 0.7;
-    color: #fff;
+    color: $c-white;
 
     @include tablets {
       margin-top: 40px;

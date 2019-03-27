@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(PlayfairDisplay/PlayfairDisplay-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url(PlayfairDisplay/PlayfairDisplay-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(ProximaNova/ProximaNova-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(ProximaNova/ProximaNova-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    src: url(ProximaNova/ProximaNova-Light.ttf) format('truetype');
+    font-weight: 300;
+}

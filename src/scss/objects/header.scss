@@ -3,6 +3,7 @@
   position: fixed;
   width: 100%;
   z-index: 100;
+  transition: 0.3s;
 
   &__content {
     padding: 15px 0;
@@ -14,15 +15,19 @@
 
   &__nav {
     @include tablets {
-      padding: 50px 40px;
+      padding: 73px 40px;
     }
 
     &-link {
       text-transform: uppercase;
       text-decoration: none;
-      color: #fff;
+      color: $c-white;
       letter-spacing: 3px;
       font-weight: 700;
+
+      &:active {
+        color: $c-warning;
+      }
 
       @include link-underline;
 
@@ -31,7 +36,7 @@
       }
 
       @include tablets {
-        font-size: 16px;
+        font-size: 20px;
       }
 
       &:not(:last-child) {
@@ -43,7 +48,7 @@
 
         @include tablets {
           margin-right: 0;
-          margin-bottom: 20px;
+          margin-bottom: 46px;
         }
       }
     }
@@ -79,7 +84,7 @@
   &__phone {
     letter-spacing: 3.38px;
     font-size: 18px;
-    color: #fff;
+    color: $c-white;
     opacity: 0.7;
     text-decoration: none;
     font-weight: bold;
@@ -93,6 +98,11 @@
     }
 
     &-text {
+      @include large {
+          padding-top: 4px; //fix border-bottom after hover
+          display: inline-block;
+      }
+
       @include tablets {
         display: none;
       }
@@ -117,8 +127,16 @@
   }
 
   &__logo {
+    max-width: 182px;
+    max-height: 90px;
+    transition: 0.3s;
+
+    &_sticky {
+      max-width: 120px;
+    }
+
     @include large {
-      width: 120px;
+      max-width: 120px;
     }
   }
 
@@ -129,7 +147,7 @@
     @include tablets {
       display: block;
       font-size: 20px;
-      color: #fff;
+      color: $c-white;
     }
 
     &-close {
@@ -151,5 +169,9 @@
     @include tablets {
       position: relative;
     }
+  }
+
+  &_sticky{
+    //position: fixed;
   }
 }

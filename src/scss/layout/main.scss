@@ -33,6 +33,16 @@ $col-gutter: $container-gutter;
   padding-left: $col-gutter;
 }
 
-.main-content{
-  padding-top: 90px;
+.content {
+  padding-top: 120px;
+
+  @include large {
+    padding-top: 90px;
+  }
+}
+
+.main-content {
+  @include tablets {
+    padding-top: 32px;
+  }
 }

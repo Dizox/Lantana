@@ -1,27 +1,25 @@
-.infobar{
+.infobar {
   width: 100%;
   background-color: rgba(216, 216, 216, .2);
 
-  &__wrapper{
+  &__wrapper {
     max-width: 1019px;
     margin: 0px auto;
     padding: 109px 0px;
     text-align: center;
   }
 
-  &__text{
-    color: #212121;
-    font-family: "PlayfairDisplay";
+  &__text {
+    color: $c-text;
+    font-family: $secondary-font;
     font-size: 24px;
     font-weight: 400;
     letter-spacing: 0.21px;
     line-height: 36px;
     margin-bottom: 43px;
-  }
-}
 
-@media screen and (max-width: 768px){
-  .infobar__text{
-    font-size: 18px;
+    @include tablets {
+      font-size: 18px;
+    }
   }
 }

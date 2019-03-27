@@ -103,6 +103,12 @@
   }
 }
 
+@mixin mini-pc() {
+  @media screen and (max-width: $mini-pc) {
+    @content;
+  }
+}
+
 @mixin medium() {
   @media screen and (max-width: $medium) {
     @content;
@@ -128,7 +134,7 @@
 }
 
 @mixin b-phones() {
-  @media screen and (max-width: $big-phones) {
+  @media screen and (max-width: $b-phones) {
     @content;
   }
 }
@@ -139,8 +145,14 @@
   }
 }
 
-@mixin u-l-phones{
-    @media screen and (max-width: $u-l-phones){
-        @content;
-    }
+@mixin small-phones() {
+  @media screen and (max-width: $small-phones){
+    @content;
+  }
+}
+
+@mixin u-l-phones() {
+  @media screen and (max-width: $u-l-phones){
+    @content;
+  }
 }

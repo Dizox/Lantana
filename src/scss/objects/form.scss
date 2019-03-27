@@ -1,8 +1,8 @@
 .form {
-  max-width: 460px;
 
   @include tablets {
     text-align: center;
+    max-width: 100%;
   }
 
   .input {
@@ -10,10 +10,10 @@
     border: none;
     width: 100%;
     letter-spacing: 0.57px;
-    border-bottom: 1px solid #148ba5;
+    border-bottom: 1px solid $c-primary;
     outline: none;
     height: 60px;
-    color: $c-primary;
+    color: $c-black;
     border-radius: 0;
   }
 
@@ -50,11 +50,6 @@
   font-weight: 700;
   align-items: center;
 
-  @include tablets {
-    justify-content: center;
-    flex-direction: column;
-  }
-
   &__text {
     margin-right: 20px;
 
@@ -71,12 +66,17 @@
     color: $c-primary;
     margin-bottom: 5px;
 
-    @include tablets {
-      font-size: 34px;
-    }
-
     &:hover {
       color: darken($c-primary, 15%);
     }
+
+    @include tablets {
+      font-size: 34px;
+    }
+  }
+
+  @include tablets {
+    justify-content: center;
+    flex-direction: column;
   }
 }

@@ -41,28 +41,12 @@
     }
   }
 
-  &--right {
-    margin-left: initial;
-    margin-right: 65px;
-
-    &::before {
-      left: auto;
-      right: -65px;
-
-      @include tablets{
-        left: 0px;
-        right: 0px;
-      }
-
-      @include l-tablets{
-        left: -40px;
-      }
-    }
-  }
+  //importants need to overlap two-column styles (forced necessity)
+  //I did not think how to do it normally
 
   @include tablets{
-    margin-left: 40px !important;
-    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 40px !important;
 
     &_phone{
       margin-top: 0px !important;
@@ -84,6 +68,27 @@
 
     &_phone{
       width: auto !important;
+    }
+  }
+
+
+  &--right {
+    margin-left: initial;
+    margin-right: 65px;
+
+    @include tablets {
+      margin-left: 40px !important;
+      margin-right: 0px !important;
+    }
+
+    &::before {
+      left: auto;
+      right: -65px;
+
+      @include tablets {
+        left: -40px !important;
+        right: 0px;
+      }
     }
   }
 }

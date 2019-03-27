@@ -1,69 +1,69 @@
-.slider{
+.slider {
   width: 100%;
   height: 220px;
   background-color: #d8d8d8;
   opacity: 0.2;
   display: flex;
 
-  &__container{
+  &__container {
     position: relative;
     width: 100%;
     max-width: 1170px;
     margin: 0px auto;
   }
 
-  &__item{
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-.owl-nav{
+.owl-nav {
   top: 28% !important;
   left: -2% !important;
   width: 106% !important;
 }
 
-@media screen and (max-width: 1300px){
-  .owl-nav{
-    left: 0% !important;
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 1250px){
-  .owl-nav{
-    left: 2% !important;
-    width: 96% !important;
-  }
-}
-
-@media screen and (max-width: 1350px){
-  .owl-nav{
+@media screen and (max-width: 1350px) {
+  .owl-nav {
     left: 2% !important;
     width: 97% !important;
   }
 }
 
-@media screen and (max-width: 420px){
-  .slider{
+@media screen and (max-width: 1300px) {
+  .owl-nav {
+    left: 0% !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .owl-nav {
+    left: 2% !important;
+    width: 96% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .slider {
     height: 150px;
   }
 
-  .owl-nav{
+  .owl-nav {
     left: 15% !important;
     width: 70% !important;
   }
 }
 
-.owl-prev, .owl-next{
+.owl-prev, .owl-next {
   color: $c-text !important;
   font-size: 60px !important;
   outline: none !important;
 }
 
-.owl-stage-outer{
+.owl-stage-outer {
   width: 100%;
   max-width: 1170px;
   margin: 0px auto;
@@ -233,7 +233,7 @@
 }
 
 .owl-dot.active span{
-     background-color: #fff!important;
+     background-color: $c-white !important;
 }
 
 .owl-dot span{

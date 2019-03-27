@@ -1,6 +1,6 @@
-.femaleTitle{
+.femaleTitle {
   width: max-content;
-  margin: 0px auto;
+  margin: 72px auto 0px;
   color: $c-text;
   font-family: $secondary-font;
   font-size: 56px;
@@ -8,8 +8,8 @@
   letter-spacing: 0.5px;
 }
 
-@media screen and (max-width: 520px){
-  .femaleTitle{
+@media screen and (max-width: 520px) {
+  .femaleTitle {
     font-size: 48px;
   }
 }

@@ -1,5 +1,5 @@
-.two-column-noImg{
-  &__titleTop{
+.two-column-noImg {
+  &__titleTop {
     color: $c-primary;
     font-family: $main-font;
     font-size: 14px;
@@ -9,7 +9,7 @@
     margin-bottom: 30px;
   }
 
-  &__titleColumn{
+  &__titleColumn {
     color: $c-text;
     font-family: $main-font;
     font-size: 16px;
@@ -18,7 +18,7 @@
     text-transform: uppercase;
   }
 
-  &__col{
+  &__col {
     max-width: 480px;
   }
 }

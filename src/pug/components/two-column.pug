@@ -2,22 +2,29 @@ mixin twoColumn(data)
     if !data
         - var data = {};
     section.container
-        .two-column__wrap
+        .two-column__wrap(class=`${data.indent ? 'two-column__wrap_indent' : ''}`)
             .two-column__row(class=`${data.class ? data.class : ''}`)
-                .two-column__col
-                    if data.desc
-                        span.desc-text
-                            each item in data.desc
-                                span= item
-                    if data.titleIsH1
-                        h1.h3= data.title
-                    else if data.titleIsH2
-                        h2.h3= data.title
-                    else
-                        div.h3= data.title
-                    .img-square-wrap
-                        .img-square(class=`img-square ${data.color}`)
-                            img(src=`${data.img}`)
+                .two-column__col(class=`${data.form ? 'two-column__col_form' : ''}`)
+                    .two-column__two-items
+                      if data.desc
+                          span.desc-text
+                              each item in data.desc
+                                  span= item
+                      if data.titleIsH1
+                        if data.titleBigFont
+                          h1.h3.h3_bigFont= data.title
+                        else
+                          h1.h3= data.title
+                      else if data.titleIsH2
+                          if data.titleBigFont
+                            h2.h3.h3_bigFont= data.title
+                          else
+                            h2.h3= data.title
+                      else
+                          div.h3= data.title
+                      .img-square-wrap
+                          .img-square(class=`img-square ${data.color}`)
+                              img(src=`${data.img}`)
                     if data.list
                         ul.style-ul
                             each item in data.list
@@ -64,7 +71,7 @@ mixin twoColumn(data)
                             input(type="email", placeholder="Email").input
                             textarea(placeholder="Message").input
                             button.btn send message
-                .two-column__col
+                .two-column__col(class = data.form && 'two-column__col_img-width')
                     .img-square-wrap
                         .img-square(class=`img-square ${data.color}`)
                             img(src=`${data.img}`)

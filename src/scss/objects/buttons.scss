@@ -11,10 +11,22 @@
   text-align: center;
   background-color: transparent;
   outline: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border: 2px solid #e7f3f6;
+    width: 100.7%;
+    height: 104%;
+    top: 1%;
+    left: 0.3%;
+  }
 
   &:hover {
     background-color: $c-primary;
-    color: #fff;
+    color: $c-white;
   }
 
   &--small {
@@ -25,11 +37,19 @@
       padding: 15px 20px;
       font-size: 12px;
     }
+
+    @include small-phones {
+      width: auto !important; //fix someone buttons
+    }
   }
 
   @include phones {
     padding: 15px 30px;
     font-size: 14px;
+  }
+
+  @include small-phones {
+    width: 100%;
   }
 
   @include u-l-phones {

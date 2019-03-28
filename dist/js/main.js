@@ -15302,6 +15302,15 @@ var _jquery = __webpack_require__(37);var _jquery2 = _interopRequireDefault(_jqu
 
 });
 
+(0, _jquery2.default)(document).scroll(function () {
+    var s_top = (0, _jquery2.default)(this).scrollTop();
+    if (s_top > 1) {
+        (0, _jquery2.default)(".header__logo").addClass("header__logo_sticky");
+    } else {
+        (0, _jquery2.default)(".header__logo").removeClass("header__logo_sticky");
+    }
+});
+
 /***/ })
 ],[38]);
 //# sourceMappingURL=main.js.map

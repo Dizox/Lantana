@@ -2,7 +2,7 @@ mixin twoColumn(data)
     if !data
         - var data = {};
     section.container
-        .two-column__wrap(class=`${data.indent ? 'two-column__wrap_indent' : ''}` class=`${data.wrapBig ? 'two-column__wrap_big' : ''}`)
+        .two-column__wrap(class=`${data.wrapIndent ? 'two-column__wrap_indent' : ''}` class=`${data.wrapBig ? 'two-column__wrap_big' : ''}`  class=`${data.wrapMedium ? 'two-column__wrap_medium' : ''}` class=`${data.wrapOverSize ? 'two-column__wrap_over-size' : ''}`)
             .two-column__row(class=`${data.class ? data.class : ''}`)
                 .two-column__col(class=`${data.form ? 'two-column__col_form' : ''}`)
                     .two-column__two-items

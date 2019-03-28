@@ -1066,7 +1066,7 @@ p:last-child {
 .femaleTitle {
   text-align: center;
   margin-top: 72px;
-  margin-bottom: 0px;
+  margin-bottom: 60px;
   color: #212121;
   font-family: "PlayfairDisplay";
   font-size: 56px;
@@ -1085,8 +1085,13 @@ p:last-child {
     margin-top: 40px; }
   .two-column__wrap_indent {
     padding-top: 40px; }
+  .two-column__wrap_medium {
+    padding-top: 60px;
+    padding-bottom: 60px; }
   .two-column__wrap_big {
     padding-top: 100px; }
+  .two-column__wrap_over-size {
+    padding-top: 120px; }
   .two-column__wrap_start-page {
     padding-top: 64px; }
   @media screen and (max-width: 768px) {

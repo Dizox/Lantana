@@ -7,12 +7,23 @@
       margin-top: 40px;
     }
 
+    //Optional modifiers
+
     &_indent {
       padding-top: 40px;
     }
 
+    &_medium {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
     &_big {
       padding-top: 100px;
+    }
+
+    &_over-size {
+      padding-top: 120px;
     }
 
     &_start-page{

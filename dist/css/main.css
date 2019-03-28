@@ -801,14 +801,14 @@ p:last-child {
         .header__phone:hover::after {
           width: 0; } }
   .header__logo {
-    max-width: 182px;
+    width: 182px;
     max-height: 90px;
     transition: 0.3s; }
     .header__logo_sticky {
-      max-width: 120px; }
+      width: 120px; }
     @media screen and (max-width: 1199px) {
       .header__logo {
-        max-width: 120px; } }
+        width: 120px; } }
   .header__hamburger {
     display: none;
     text-decoration: none; }

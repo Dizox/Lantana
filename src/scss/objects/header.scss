@@ -127,16 +127,16 @@
   }
 
   &__logo {
-    max-width: 182px;
+    width: 182px;
     max-height: 90px;
     transition: 0.3s;
 
     &_sticky {
-      max-width: 120px;
+      width: 120px;
     }
 
     @include large {
-      max-width: 120px;
+      width: 120px;
     }
   }
 

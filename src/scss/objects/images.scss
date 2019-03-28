@@ -35,38 +35,37 @@
     }
   }
 
-  &--purple{
-    &::before{
+  &--purple {
+    &::before {
       background-color: $c-purple;
     }
   }
 
   //importants need to overlap two-column styles (forced necessity)
-  //I did not think how to do it normally
 
-  @include tablets{
+  @include tablets {
     margin-left: 0px !important;
     margin-right: 40px !important;
 
-    &_phone{
+    &_phone {
       margin-top: 0px !important;
     }
 
-    &-wrap{
-      &_phone{
+    &-wrap {
+      &_phone {
         width: 50% !important;
       }
     }
   }
 
-  @include l-tablets{
-    &-wrap{
-      &_phone{
+  @include l-tablets {
+    &-wrap {
+      &_phone {
         width: auto !important;
       }
     }
 
-    &_phone{
+    &_phone {
       width: auto !important;
     }
   }

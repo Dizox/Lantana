@@ -15273,22 +15273,23 @@ var _jquery = __webpack_require__(37);var _jquery2 = _interopRequireDefault(_jqu
         (0, _jquery2.default)('.header__nav').toggleClass('active');
     });
 
-    (0, _jquery2.default)(".owl-carousel").owlCarousel({
+    (0, _jquery2.default)(".slider__container").owlCarousel({
         items: 5,
         nav: true, //nav arrows
         dots: false,
         touchDrag: true,
-        mouseDrag: true,
+        mouseDrag: false,
+        margin: 20,
         loop: true, //cycle
         responsiveClass: true, //turn adaptive
         responsive: { //adaptive
             0: {
                 items: 1 },
 
-            420: {
+            440: {
                 items: 2 },
 
-            650: {
+            768: {
                 items: 3 },
 
             1000: {
@@ -15299,17 +15300,6 @@ var _jquery = __webpack_require__(37);var _jquery2 = _interopRequireDefault(_jqu
 
 
 
-});
-
-(0, _jquery2.default)(document).scroll(function () {
-    var s_top = (0, _jquery2.default)(this).scrollTop();
-    if (s_top > 1) {
-        (0, _jquery2.default)(".header__logo").addClass("header__logo_sticky");
-        console.log("success");
-    } else {
-        (0, _jquery2.default)(".header__logo").removeClass("header__logo_sticky");
-        console.log("fail");
-    }
 });
 
 /***/ })

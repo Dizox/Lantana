@@ -11,6 +11,10 @@
       padding-top: 40px;
     }
 
+    &_big {
+      padding-top: 100px;
+    }
+
     &_start-page{
       padding-top: 64px;
     }
@@ -61,7 +65,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
 
     &.form-col {
       .two-column__col:first-child .img-square {
@@ -101,8 +105,14 @@
     width: calc(50% - 50px);
 
     &:first-child {
+      padding-top: 65px;
+
       .img-square {
         display: none;
+      }
+
+      @include tablets {
+        padding-top: 0px;
       }
     }
 
@@ -169,6 +179,12 @@
         margin-left: -$container-gutter;
         margin-right: -$container-gutter;
       }
+    }
+  }
+
+  &__text {
+    &_indent {
+      margin-bottom: 15px !important;
     }
   }
 }

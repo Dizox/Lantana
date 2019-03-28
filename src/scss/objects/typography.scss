@@ -76,7 +76,7 @@ p {
   &_bigFont {
     font-size: 56px;
 
-    @include tablets {
+    @include medium {
       font-size: 32px;
       line-height: 41px;
       margin-top: 15px;

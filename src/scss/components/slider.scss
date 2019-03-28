@@ -7,9 +7,7 @@
 
   &__container {
     position: relative;
-    width: 100%;
-    max-width: 1170px;
-    margin: 0px auto;
+    margin: 0px 30px;
   }
 
   &__item {
@@ -17,57 +15,63 @@
     justify-content: center;
     align-items: center;
   }
+
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    max-width: calc(1240px + 40px * 2);
+    margin: 0px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include tablets {
+    margin-top: 15px;
+    margin-bottom: 60px;
+  }
 }
+
 
 .owl-nav {
-  top: 28% !important;
-  left: -2% !important;
-  width: 106% !important;
-}
-
-@media screen and (max-width: 1350px) {
-  .owl-nav {
-    left: 2% !important;
-    width: 97% !important;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .owl-nav {
-    left: 0% !important;
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 1250px) {
-  .owl-nav {
-    left: 2% !important;
-    width: 96% !important;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0% !important;
+  font-size: 60px !important;
+  position: absolute;
+  width: calc(100% + 60px);
+  top: 50%;
+  left: -30px;
 }
 
 @media screen and (max-width: 420px) {
   .slider {
     height: 150px;
   }
-
-  .owl-nav {
-    left: 15% !important;
-    width: 70% !important;
-  }
 }
 
-.owl-prev, .owl-next {
+.owl-prev,
+.owl-next {
   color: $c-text !important;
-  font-size: 60px !important;
   outline: none !important;
+  position: absolute !important;
+}
+
+.owl-prev {
+  left: 0% !important;
+}
+
+.owl-next {
+  right: 0% !important;
 }
 
 .owl-stage-outer {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0px auto;
+  position: absolute !important;
+  width: 100% !important;
 }
+
+
 
 /**
  * Owl Carousel v2.3.4
@@ -215,11 +219,10 @@
 }
 
 .owl-nav{
-  position: absolute;
   display: flex;
   justify-content: space-between;
-  top: 28%;
-  width: 100%;
+  align-items: center;
+  height: 100%;
 }
 
 .owl-dots{

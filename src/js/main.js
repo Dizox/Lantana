@@ -11,41 +11,31 @@ $(document).ready(function () {
         $('.header__nav').toggleClass('active');
     });
 
-    $(".owl-carousel").owlCarousel({
+    $(".slider__container").owlCarousel( {
         items: 5,
         nav: true, //nav arrows
         dots: false,
         touchDrag: true,
-        mouseDrag: true,
+        mouseDrag: false,
+        margin: 20,
         loop: true, //cycle
-        responsiveClass:true, //turn adaptive
-        responsive:{ //adaptive
-            0:{
+        responsiveClass: true, //turn adaptive
+        responsive: { //adaptive
+            0: {
                 items:1
             },
-            420:{
+            440: {
                 items:2
             },
-            650:{
+            768: {
                 items:3
             },
-            1000:{
+            1000: {
                 items:4
             },
-            1400:{
+            1400: {
                 items:5
             }
-        }
+        },
     });
-});
-
-$(document).scroll(function () {
-    let s_top = $(this).scrollTop();
-    if(s_top > 1) {
-        $(".header__logo").addClass("header__logo_sticky");
-        console.log("success");
-    } else {
-        $(".header__logo").removeClass("header__logo_sticky");
-        console.log("fail");
-    }
 });

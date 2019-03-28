@@ -1064,8 +1064,9 @@ p:last-child {
       flex-direction: column; } }
 
 .femaleTitle {
-  width: max-content;
-  margin: 72px auto 0px;
+  text-align: center;
+  margin-top: 72px;
+  margin-bottom: 0px;
   color: #212121;
   font-family: "PlayfairDisplay";
   font-size: 56px;
@@ -1306,14 +1307,11 @@ p:last-child {
       margin-bottom: 60px; } }
 
 .owl-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 0% !important;
+  height: 28px !important;
   font-size: 60px !important;
   position: absolute;
   width: calc(100% + 60px);
-  top: 50%;
+  top: 30%;
   left: -30px; }
 
 @media screen and (max-width: 420px) {
@@ -1324,7 +1322,8 @@ p:last-child {
 .owl-next {
   color: #212121 !important;
   outline: none !important;
-  position: absolute !important; }
+  position: absolute !important;
+  height: 100% !important; }
 
 .owl-prev {
   left: 0% !important; }
@@ -1499,12 +1498,6 @@ p:last-child {
 .owl-stage-outer, .owl-stage, .owl-item, .slider__item, .slider__background {
   height: 100%; }
 
-.owl-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%; }
-
 .owl-dots {
   position: absolute;
   bottom: 5%;
@@ -1614,7 +1607,8 @@ p:last-child {
   text-transform: uppercase; }
 
 .two-column-noImg__col {
-  max-width: 480px; }
+  max-width: 480px;
+  padding-top: 0px !important; }
 
 /* Font awesome */
 

@@ -34,14 +34,11 @@
 
 
 .owl-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 0% !important;
+  height: 28px !important;
   font-size: 60px !important;
   position: absolute;
   width: calc(100% + 60px);
-  top: 50%;
+  top: 30%;
   left: -30px;
 }
 
@@ -56,6 +53,7 @@
   color: $c-text !important;
   outline: none !important;
   position: absolute !important;
+  height: 100% !important;
 }
 
 .owl-prev {
@@ -216,13 +214,6 @@
 
 .owl-stage-outer, .owl-stage, .owl-item , .slider__item, .slider__background{
     height: 100%;
-}
-
-.owl-nav{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
 }
 
 .owl-dots{

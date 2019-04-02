@@ -658,10 +658,10 @@ p:last-child {
     position: absolute;
     z-index: -1;
     border: 2px solid #e7f3f6;
-    width: 100.7%;
-    height: 104%;
-    top: 1%;
-    left: 0.3%; }
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
+    top: 1px;
+    left: 1px; }
   .btn:hover {
     background-color: #148ba5;
     color: #fff; }
@@ -826,6 +826,9 @@ p:last-child {
   @media screen and (max-width: 768px) {
     .header .container {
       position: relative; } }
+
+.active {
+  color: #f4dd2d; }
 
 .footer {
   background-color: #148ba5;
@@ -1247,8 +1250,9 @@ p:last-child {
     margin-bottom: 0px;
     text-align: center; }
   @media screen and (max-width: 575px) {
-    .services__col:nth-child(even) .services__col-img::before {
-      right: 40px; } }
+    .services__col:nth-child(even) .services__col-img {
+      margin-left: -40px;
+      margin-right: 40px; } }
 
 .services__title-block {
   display: flex;
@@ -1317,11 +1321,14 @@ p:last-child {
   position: absolute;
   width: calc(100% + 60px);
   top: 30%;
-  left: -30px; }
+  left: -30px;
+  font-family: 'Zapf Dingbats'; }
 
 @media screen and (max-width: 420px) {
   .slider {
-    height: 150px; } }
+    height: 150px; }
+  .owl-nav {
+    top: 21%; } }
 
 .owl-prev,
 .owl-next {

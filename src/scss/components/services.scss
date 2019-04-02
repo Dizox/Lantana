@@ -59,9 +59,10 @@
     }
 
     &:nth-child(even) {
-      .services__col-img::before {
+      .services__col-img {
         @include b-phones {
-          right: 40px;
+          margin-left: -40px;
+          margin-right: 40px;
         }
       }
     }
